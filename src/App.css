@@ -38,7 +38,7 @@
 }
 
 /* ===================== */
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: Arial;
@@ -63,7 +63,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 8px gray;
-}
+} */
 
 
 /* task3 */
@@ -119,4 +119,68 @@ button:hover {
 
 .card p {
   color: #555;
+}
+
+/* //task4 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+/* Main Container */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+/* Light Theme */
+
+.light {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+/* Dark Theme */
+
+.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Counter Text */
+
+.count {
+  font-size: 60px;
+  margin: 20px;
+}
+
+/* Button Group */
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Theme Button */
+
+.theme-btn {
+  margin-top: 10px;
 }

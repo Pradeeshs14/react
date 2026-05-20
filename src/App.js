@@ -49,13 +49,28 @@ import React from "react";
 
 //task4
 
+// import "./App.css";
+// import Task4 from "./components/task4";
+
+// function App() {
+//   return (
+//     <div>
+//       <Task4 />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//task5
+
 import "./App.css";
-import Task4 from "./components/task4";
+import Task5 from "./components/task5";
 
 function App() {
   return (
     <div>
-      <Task4 />
+      <Task5 />
     </div>
   );
 }

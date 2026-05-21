@@ -64,13 +64,28 @@ import React from "react";
 
 //task5
 
+// import "./App.css";
+// import Task5 from "./components/task5";
+
+// function App() {
+//   return (
+//     <div>
+//       <Task5 />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//task6
+
 import "./App.css";
-import Task5 from "./components/task5";
+import Task6 from "./components/task6";
 
 function App() {
   return (
     <div>
-      <Task5 />
+      <Task6 />
     </div>
   );
 }

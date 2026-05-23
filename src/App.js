@@ -79,13 +79,27 @@ import React from "react";
 
 //task6
 
+// import "./App.css";
+// import Task6 from "./components/task6";
+
+// function App() {
+//   return (
+//     <div>
+//       <Task6 />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//task7
 import "./App.css";
-import Task6 from "./components/task6";
+import Task7 from "./components/task7";
 
 function App() {
   return (
     <div>
-      <Task6 />
+      <Task7 />
     </div>
   );
 }

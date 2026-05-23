@@ -248,6 +248,62 @@ button:hover {
 
 /* //task6 */
 
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #f4f4f4;
+} */
+
+/* Main Container */
+
+/* .container {
+  padding: 30px;
+  text-align: center;
+} */
+
+/* Heading */
+
+/* h1 {
+  margin-bottom: 30px;
+} */
+
+/* Card Container */
+
+/* .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+} */
+
+/* User Card */
+
+/* .card {
+  width: 280px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px gray;
+  text-align: left;
+  transition: 0.3s;
+} */
+
+/* Hover Effect */
+
+/* .card:hover {
+  transform: scale(1.03);
+} */
+
+/* Text */
+
+/* .card p {
+  margin: 10px 0px;
+} */
+
+
+/* //task7 */
+
 body {
   margin: 0;
   padding: 0;
@@ -258,45 +314,97 @@ body {
 /* Main Container */
 
 .container {
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+
+.card {
+  width: 400px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px gray;
   text-align: center;
 }
 
-/* Heading */
+/* Image Section */
 
-h1 {
-  margin-bottom: 30px;
+.image-container {
+  margin: 20px 0px;
 }
 
-/* Card Container */
+/* Profile Image */
 
-.card-container {
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Placeholder */
+
+.placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: lightgray;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  margin: auto;
 }
 
-/* User Card */
+/* Like Section */
 
-.card {
-  width: 280px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px gray;
+.like-section {
+  margin-top: 20px;
+}
+
+/* Buttons */
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Liked Button */
+
+.liked {
+  background-color: red;
+  color: white;
+}
+
+/* Comment Section */
+
+.comment-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.comment-section input {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Comments */
+
+.comments-list {
+  margin-top: 20px;
   text-align: left;
-  transition: 0.3s;
 }
 
-/* Hover Effect */
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-/* Text */
-
-.card p {
-  margin: 10px 0px;
+.comment {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }

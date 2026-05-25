@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import Selfintro from "./components/selfintro";
 
 // function App() {
@@ -93,14 +93,83 @@ import React from "react";
 // export default App;
 
 //task7
+// import "./App.css";
+// import Task7 from "./components/task7";
+
+// function App() {
+//   return (
+//     <div>
+//       <Task7 />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// task8
+
+import React, { createContext, useState } from "react";
 import "./App.css";
-import Task7 from "./components/task7";
+import Form from "./components/task8";
+
+// Create Context
+
+export const FormContext = createContext();
 
 function App() {
+
+  // Form Data State
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    city: "",
+  });
+
+  // Theme State
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Handle Input Change
+
+  const handleChange = (event) => {
+
+    const { name, value } = event.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+
+  };
+
+  // Toggle Theme
+
+  const toggleTheme = () => {
+
+    setDarkMode(!darkMode);
+
+  };
+
   return (
-    <div>
-      <Task7 />
-    </div>
+
+    <FormContext.Provider
+      value={{
+        formData,
+        handleChange,
+        darkMode,
+        toggleTheme,
+      }}
+    >
+
+      <div className={darkMode ? "dark container" : "light container"}>
+
+        <Form />
+
+      </div>
+
+    </FormContext.Provider>
+
   );
 }
 

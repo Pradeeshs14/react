@@ -108,68 +108,84 @@
 
 // task8
 
-import React, { createContext, useState } from "react";
+// import React, { createContext, useState } from "react";
+// import "./App.css";
+// import Form from "./components/task8";
+
+// // Create Context
+
+// export const FormContext = createContext();
+
+// function App() {
+
+//   // Form Data State
+
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     city: "",
+//   });
+
+//   // Theme State
+
+//   const [darkMode, setDarkMode] = useState(false);
+
+//   // Handle Input Change
+
+//   const handleChange = (event) => {
+
+//     const { name, value } = event.target;
+
+//     setFormData({
+//       ...formData,
+//       [name]: value,
+//     });
+
+//   };
+
+//   // Toggle Theme
+
+//   const toggleTheme = () => {
+
+//     setDarkMode(!darkMode);
+
+//   };
+
+//   return (
+
+//     <FormContext.Provider
+//       value={{
+//         formData,
+//         handleChange,
+//         darkMode,
+//         toggleTheme,
+//       }}
+//     >
+
+//       <div className={darkMode ? "dark container" : "light container"}>
+
+//         <Form />
+
+//       </div>
+
+//     </FormContext.Provider>
+
+//   );
+// }
+
+// export default App;
+
+//minichat
+
+import React from "react";
 import "./App.css";
-import Form from "./components/task8";
-
-// Create Context
-
-export const FormContext = createContext();
+import MiniChatApp from "./components/minichat";
 
 function App() {
-
-  // Form Data State
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    city: "",
-  });
-
-  // Theme State
-
-  const [darkMode, setDarkMode] = useState(false);
-
-  // Handle Input Change
-
-  const handleChange = (event) => {
-
-    const { name, value } = event.target;
-
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-  };
-
-  // Toggle Theme
-
-  const toggleTheme = () => {
-
-    setDarkMode(!darkMode);
-
-  };
-
   return (
-
-    <FormContext.Provider
-      value={{
-        formData,
-        handleChange,
-        darkMode,
-        toggleTheme,
-      }}
-    >
-
-      <div className={darkMode ? "dark container" : "light container"}>
-
-        <Form />
-
-      </div>
-
-    </FormContext.Provider>
-
+    <div>
+      <MiniChatApp />
+    </div>
   );
 }
 

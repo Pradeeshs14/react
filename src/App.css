@@ -411,57 +411,57 @@ button {
 
 
 /* task8 */
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: Arial;
-}
+} */
 
 /* Main Container */
 
-.container {
+/* .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
-}
+} */
 
 /* Light Theme */
 
-.light {
+/* .light {
   background-color: #f4f4f4;
   color: black;
-}
+} */
 
 /* Dark Theme */
 
-.dark {
+/* .dark {
   background-color: #1e1e1e;
   color: white;
-}
+} */
 
 /* Form Box */
 
-.form-box {
+/* .form-box {
   width: 400px;
   background-color: white;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 2px 10px gray;
   text-align: center;
-}
+} */
 
 /* Dark Mode Form */
 
-.dark .form-box {
+/* .dark .form-box {
   background-color: #333;
   color: white;
-}
+} */
 
 /* Inputs */
 
-.input-container {
+/* .input-container {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -472,22 +472,104 @@ input {
   margin-top: 15px;
   border: 1px solid gray;
   border-radius: 5px;
-}
+} */
 
 /* Button */
 
-button {
+/* button {
   margin-top: 15px;
   padding: 10px 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 /* Preview */
 
-.preview {
+/* .preview {
   margin-top: 25px;
   text-align: left;
+} */
+
+
+
+/* minichat */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #f4f4f4;
 }
 
+/* Main Wrapper */
+
+.chat-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Chat Container */
+
+.chat-container {
+  width: 450px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px gray;
+}
+
+/* Heading */
+
+.chat-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+
+.chat-input-section {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+
+.chat-input-section input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+/* Button */
+
+.chat-input-section button {
+  padding: 12px 18px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Messages Area */
+
+.messages-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Message Box */
+
+.message-box {
+  background-color: #e8e8e8;
+  padding: 12px;
+  border-radius: 5px;
+  word-wrap: break-word;
+}

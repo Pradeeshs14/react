@@ -177,15 +177,135 @@
 
 //minichat
 
+// import React from "react";
+// import "./App.css";
+// import MiniChatApp from "./components/minichat";
+
+// function App() {
+//   return (
+//     <div>
+//       <MiniChatApp />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+//task 10
+
+// import React from "react";
+
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
+
+// import "./App.css";
+
+// import Navbar from "./components/Routing/navbar";
+// import Home from "./components/Routing/home";
+// import About from "./components/Routing/about";
+// import Services from "./components/Routing/service";
+// import WebDevelopment from "./components/Routing/webdevelop";
+// import AppDevelopment from "./components/Routing/appdev";
+// import UIDesign from "./components/Routing/uidesign";
+// import Contact from "./components/Routing/contact";
+// import Profile from "./components/Routing/profile";
+
+// function App() {
+
+//   return (
+
+//     <BrowserRouter>
+
+//       <Navbar />
+
+//       <Routes>
+
+//         <Route path="/" element={<Home />} />
+
+//         <Route path="/about" element={<About />} />
+
+//         <Route path="/contact" element={<Contact />} />
+
+//         <Route path="/profile" element={<Profile />} />
+
+//         {/* Nested Routing */}
+
+//         <Route path="/services" element={<Services />}>
+
+//           <Route
+//             path="web-development"
+//             element={<WebDevelopment />}
+//           />
+
+//           <Route
+//             path="app-development"
+//             element={<AppDevelopment />}
+//           />
+
+//           <Route
+//             path="ui-ux-design"
+//             element={<UIDesign />}
+//           />
+
+//         </Route>
+
+//       </Routes>
+
+//     </BrowserRouter>
+
+//   );
+// }
+
+// export default App;
+
+
+// task11
+
 import React from "react";
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import "./App.css";
-import MiniChatApp from "./components/minichat";
+
+import Navbar from "./components/Navbar";
+import UserList from "./components/UserList";
+import UserDetails from "./components/UserDetails";
 
 function App() {
+
   return (
-    <div>
-      <MiniChatApp />
-    </div>
+
+    <BrowserRouter>
+
+      <Navbar />
+
+      <Routes>
+
+        {/* User List Page */}
+
+        <Route
+          path="/"
+          element={<UserList />}
+        />
+
+        {/* User Details Page */}
+
+        <Route
+          path="/user/:userId"
+          element={<UserDetails />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
+
   );
 }
 

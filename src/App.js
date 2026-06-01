@@ -264,48 +264,64 @@
 
 // task11
 
+// import React from "react";
+
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
+
+// import "./App.css";
+
+// import Navbar from "./components/Navbar";
+// import UserList from "./components/UserList";
+// import UserDetails from "./components/UserDetails";
+
+// function App() {
+
+//   return (
+
+//     <BrowserRouter>
+
+//       <Navbar />
+
+//       <Routes>
+
+        // {/* User List Page */}
+
+        // <Route
+        //   path="/"
+        //   element={<UserList />}
+        // />
+
+        // {/* User Details Page */}
+
+        // <Route
+        //   path="/user/:userId"
+        //   element={<UserDetails />}
+        // />
+
+      // </Routes>
+
+    // </BrowserRouter>
+
+  // );
+// }
+
+// export default App;
+
+
+// task12
 import React from "react";
-
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
 import "./App.css";
-
-import Navbar from "./components/Navbar";
-import UserList from "./components/UserList";
-import UserDetails from "./components/UserDetails";
+import TicTacToe from "./components/task12";
 
 function App() {
-
   return (
-
-    <BrowserRouter>
-
-      <Navbar />
-
-      <Routes>
-
-        {/* User List Page */}
-
-        <Route
-          path="/"
-          element={<UserList />}
-        />
-
-        {/* User Details Page */}
-
-        <Route
-          path="/user/:userId"
-          element={<UserDetails />}
-        />
-
-      </Routes>
-
-    </BrowserRouter>
-
+    <div>
+      <TicTacToe />
+    </div>
   );
 }
 

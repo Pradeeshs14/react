@@ -313,15 +313,34 @@
 
 
 // task12
+// import React from "react";
+// import "./App.css";
+// import TicTacToe from "./components/task12";
+
+// function App() {
+//   return (
+//     <div>
+//       <TicTacToe />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// task13
+
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DirectoryViewer from "./components/task13";
 import "./App.css";
-import TicTacToe from "./components/task12";
 
 function App() {
   return (
-    <div>
-      <TicTacToe />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DirectoryViewer />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

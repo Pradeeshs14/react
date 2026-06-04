@@ -768,7 +768,7 @@ input {
 } */
 
 /* task13 */
-
+/* 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -822,4 +822,56 @@ th {
 .navigator button:disabled {
   background: gray;
   cursor: not-allowed;
+} */
+
+/* task14 */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+.table-wrapper {
+  width: 95%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.table-wrapper h1 {
+  margin-bottom: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 2px 10px
+    rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background: #1f2937;
+  color: white;
+  padding: 14px;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #f8fafc;
+}
+
+.status-message,
+.error-message {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.error-message {
+  color: red;
 }

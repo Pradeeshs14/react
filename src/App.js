@@ -329,19 +329,43 @@
 
 // task13
 
+// import React from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import DirectoryViewer from "./components/task13";
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<DirectoryViewer />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+// task14
+
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DirectoryViewer from "./components/task13";
 import "./App.css";
 
+import EmployeeTable
+from "./components/EmployeeTable";
+
 function App() {
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<DirectoryViewer />} />
-      </Routes>
-    </BrowserRouter>
+
+    <div>
+
+      <EmployeeTable />
+
+    </div>
+
   );
+
 }
 
 export default App;
